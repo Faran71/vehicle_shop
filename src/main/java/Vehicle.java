@@ -4,5 +4,7 @@ public class Vehicle {
     private int maximumOccupancy;
     private String fuelType;
 
-    public Vehicle()
+    public Vehicle(){
+
+    }
 }
