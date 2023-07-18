@@ -1,4 +1,4 @@
-public class Vehicle {
+public abstract class Vehicle {
 
     private int cost;
     private int maximumOccupancy;
@@ -7,4 +7,6 @@ public class Vehicle {
     public Vehicle(){
 
     }
+
+    public abstract String typeOfTravel();
 }

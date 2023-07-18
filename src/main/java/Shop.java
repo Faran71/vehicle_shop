@@ -27,7 +27,7 @@ public class Shop {
     }
 
     public ArrayList<Vehicle> getVehicles() {
-        return vehicles;
+        return stock;
     }
     public void addToStock(Vehicle newVehicle){
         stock.add(newVehicle);
