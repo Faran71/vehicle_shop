@@ -8,7 +8,7 @@ public class Hatchback extends Car{
         this.windowTint = false;
     }
 
-    public boolean getWindowTint(){
+    public boolean getWindowTintStatus(){
         return this.windowTint;
     }
     public void addWindowTint(){

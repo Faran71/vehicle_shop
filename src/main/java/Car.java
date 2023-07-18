@@ -1,15 +1,14 @@
 public abstract class Car extends Vehicle{
 
-    private int numberOfWheels;
-
+    private int maximumOccupancy;
     public Car(){
-        this.numberOfWheels = 4;
+        this.maximumOccupancy = 5;
     }
 
     public String typeOfTravel(){
         return "This is ground-travel";
     }
-
-
-
+    public int getMaximumOccupancy(){
+        return this.maximumOccupancy;
+    }
 }

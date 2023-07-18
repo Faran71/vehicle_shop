@@ -5,10 +5,11 @@ public class Shop {
     private String name;
     private ArrayList<Vehicle> stock;
     private int till;
+    private int price;
 
     public Shop(String name){
         this.name = name;
-        stock = new ArrayList<>();
+        this.stock = new ArrayList<>();
         this.till = 0;
     }
 
@@ -26,10 +27,20 @@ public class Shop {
         this.name = name;
     }
 
-    public ArrayList<Vehicle> getVehicles() {
-        return stock;
+    public ArrayList<Vehicle> getStock() {
+        return this.stock;
     }
     public void addToStock(Vehicle newVehicle){
-        stock.add(newVehicle);
+        this.stock.add(newVehicle);
     }
+
+    public void removeFromStock(Vehicle removeVehicle){
+        this.stock.remove(removeVehicle);
+    }
+
+    public int getPrice(Vehicle newVehicle){
+        return newVehicle.getPrice();
+    }
+
+
 }

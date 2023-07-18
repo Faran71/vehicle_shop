@@ -2,10 +2,12 @@ public class Helicopter extends Vehicle{
 
     private int flightRange;
     private int price;
+    private int maximumOccupancy;
 
     public Helicopter(){
         this.price = 7000;
         this.flightRange = 400;
+        this.maximumOccupancy = 2;
     }
 
     public String typeOfTravel(){
@@ -23,4 +25,7 @@ public class Helicopter extends Vehicle{
         return this.flightRange;
     }
 
+    public int getMaximumOccupancy() {
+        return this.maximumOccupancy;
+    }
 }
