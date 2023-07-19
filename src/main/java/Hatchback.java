@@ -18,6 +18,7 @@ public class Hatchback extends Car{
     public int getPrice() {
         return this.price;
     }
+
     public void setPrice(int newPrice){
         this.price = newPrice;
     }

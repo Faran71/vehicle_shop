@@ -13,6 +13,7 @@ public class Helicopter extends Vehicle{
     public String typeOfTravel(){
         return "This is air-travel";
     }
+    public String typeOfTravel(String nameOfJourney){return nameOfJourney+" is air-travel";}
 
     public int getPrice() {
         return this.price;
